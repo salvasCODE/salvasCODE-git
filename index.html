@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <div class="cuerpo">
+
+      <div class="titulo">
+        <h1>Encriptador</h1>
+        <img src="persona.png" alt="Icon made by Pixel perfect from www.flaticon.com">
+      </div>
+
+      <div class="contenedorA">
+
+        <textarea cols="30" rows="10" placeholder="Ingrese el texto aqui" id="inputMensaje"></textarea>
+
+        <div>
+
+          <p class="advertencia">&#10071;  Solo letras minúsculas y sin acentos</p>
+
+        </div>
+
+        <div class="botones">
+
+          <button class="btnEncriptar" onclick="encriptarMensaje()"><span>Encriptar</span><i></i></button>
+          <button class="btnDesifrar" onclick="descifrarMensaje()"><span>Descifrar</span><i></i></button>
+
+        </div>
+
+      </div>
+
+      <div class="contenedorB">
+
+        <div>
+
+          <textarea disabled id="mensaje" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+          <button id="btnCopiar" onclick="copiarMensaje()" style="display: none;"><span>Copiar</span><i></i></button>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+    <footer>
+
+      <p style="font-weight: bold;">Autor: Anderson Alvarado (salvasCODE)</p>
+      <p style="padding-top: 3px;">"Elavorado para el proyecto de Alura Latam"</p>
+      <a style="font-size: 24px;" href="https://www.linkedin.com/in/anderson-alvarado-valdivia/">linkedin</a>
+      
+    </footer>
+
+  </body>
+</html>
